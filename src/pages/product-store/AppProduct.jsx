@@ -1,13 +1,16 @@
 import React from 'react'
-import ItemList from '../../compontes/itemListContainer/ItemList'
+import ItemList from '../../compontes/itemList/ItemList'
 import './appProduct.css';
 
-const AppProduct = () => {
+const AppProduct = ({greeting}) => {
   return (
-    <div className='items-content-flex'>
-        <ItemList />
-        <ItemList />
-    </div>
+    <>
+        <h2 className='title'>{greeting}</h2>
+        <div className='items-content-flex'>
+            <ItemList />
+            <ItemList />
+        </div>
+    </>
   )
 }
 

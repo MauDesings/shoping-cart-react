@@ -71,10 +71,11 @@
 
 
 
-.icon, .icon-cart{
+.icon{
     font-size: 2.6rem;
     cursor: pointer;
 }
+
 
 .icon-close{
     position: absolute;

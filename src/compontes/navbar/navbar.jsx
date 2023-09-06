@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import {FaShoppingCart} from 'react-icons/fa'
 import {RiCloseFill, RiMenuFill} from 'react-icons/ri'
 import bgPattern from '../../assets/bgPattern.svg'
 import NavLinks from './NavLinks'
+import CartWidget from '../cartWidget/CartWidget'
 import './navBar.css'
 
 
@@ -21,7 +21,7 @@ const Navbar = () => {
             </ul>
         </div>
         
-        <FaShoppingCart className='icon-cart'/>
+        <CartWidget />
     </nav>
   )
 }
