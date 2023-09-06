@@ -27,7 +27,7 @@
 .menu-links{
     position: fixed;
     list-style: none;
-    background:  hsl(353, 100%, 62%);
+    background: linear-gradient(hsl(13, 100%, 72%), hsl(353, 100%, 62%));
     width: 70%;
     height: 100vh;
     top: 0;
@@ -38,6 +38,7 @@
     align-items: center;
     justify-content: center;
     gap: 70px;
+    overflow: hidden;
 
     left: -100%;
     transition: left .5s; 
@@ -83,10 +84,21 @@
 }
 
 
+.bg{  /* imagen de fondo del menu  */
+    width: 300%;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width:320%;
+}
+
+
 
 @media (min-width: 750px){
 
-    .icon{
+    .icon, .bg{
         display: none;
     }
 
@@ -107,5 +119,7 @@
         background: transparent;
         padding: 0;
         gap: 40px;
+        overflow:visible;
     }
+
 }

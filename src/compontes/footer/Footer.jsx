@@ -6,9 +6,11 @@ const Footer = () => {
   return (
     <footer className="footer">
         <div className='footer__content container'>
-            <h2 className="footer__subtitle">Mau Desings</h2>
-            <h3 className='footer__reserved'>&copy; All rights reserved</h3>
-
+            <div className='footer__info'>
+                <h2 className="footer__subtitle">Mau Desings</h2>
+                <h3 className='footer__reserved'>&copy; All rights reserved</h3>
+            </div>
+           
             <div className="footer__sociales">
                 <SiWhatsapp className='footer__icon' />
                 <BiLogoFacebook className='footer__icon' />

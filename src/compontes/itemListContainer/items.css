@@ -1,0 +1,30 @@
+.items{
+    width: 80%;
+    max-width: 280px;
+    min-height: 150px;
+    background: #3a3939d5;
+
+    display: grid;
+    place-items: center;
+    border-radius: 7px;
+}
+
+
+.items h3, 
+.items__price,
+.items__description,
+.items__btn-add{
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.items__btn-add{
+    padding: 8px 15px;
+    border: 1px solid #3a3939d5;
+    outline: none;
+    border-radius: 5px;
+    color: rgba(255, 255, 255, 0.87);
+    background-color:rgba(245, 94, 67, 0.829);
+    /* background-color:  hsl(356, 100%, 66%); */
+}
+
